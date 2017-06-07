@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Audio Visualizer</title>
+	<style>
+	body {
+         background: #eeeeee;
+         font-family: tahoma, verdana, sans serif;
+      }
+
+      canvas {
+        margin-left:10px;
+        margin-top:10px;
+        box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+    }
+      
+      #controls{
+      	margin-left:10px;
+        margin-top:10px;
+      }
+	</style>
+	<script src="visualizer.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+</head>
+<body>
+	<canvas id="canvas" width="1100" height="400"></canvas>
+	<div id="controls">
+		<audio controls loop></audio><br>
+		<label>Color Scheme:
+            <select id = "schemeSelect">
+                <option value = "wood">Wood</option>
+                <option value = "metal">Metal</option>
+                <option value = "red">Red Metal</option>
+            </select>
+        </label>
+	</div>
+</body>
+</html>
